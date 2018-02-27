@@ -26,7 +26,7 @@
 			padding: 0.2em;
 			}
 		.oneTopLft{
-			width: 69%;
+			width: 68%;
 			padding: 0;
 			display: inline-block;
 			font-size: 1.2em;
@@ -142,30 +142,44 @@
 		.oneTop div img{
 			width: 100%;
 			}
-		  @media (min-width: 576px)
-			{
-			main{
-				/*max-width: 1366px;*/
-				margin: 0 auto 2em;
-				padding: 3em 0;
-				background-color:#e4e4e4;
-				}
-			.colSt{
-				margin: 1em 2em 1em 0em;
-				background: #fff;
-				display: inline-block;
-				}
-			.last{
-				margin-right: 0;
+		  @media (min-width: 576px){
+				main{
+					/*max-width: 1366px;*/
+					margin: 0 auto 2em;
+					padding: 3em 0;
+					background-color:#e4e4e4;
+					}
+				.colSt{
+					margin: 1em 2em 1em 0em;
+					background: #fff;
+					display: inline-block;
+					}
+				.last{
+					margin-right: 0;
+					}
 				}
 
-			}
+		  @media (max-width: 990px){
+				.oneTopLft{
+					font-size: 1em;
+					}
+				}
+		  @media (max-width: 768px) and (min-width: 576px){
+				.oneTopLft{
+					font-size: 1em;
+					vertical-align: top
+					}
+				.inBlock.emoji {
+				    vertical-align: top;
+					}	
+				}
+
 
 	</style>
 	
 	<title>Hello, world!</title>
 </head>
-	
+	<!-- https://rawgit.com/artedigitalmedia/uidev_test/master/index.html -->
 <body>
 	<div id="cont">
 		<header>
@@ -205,7 +219,7 @@
 					<div class="col-sm colSt last">
 						<div class="oneTop">
 							<div class="oneTopLft">
-								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock emoji"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
 								<div class="inBlock oneTopTtl">
 									Feeling joyful
 								</div>
@@ -235,7 +249,7 @@
 					<div class="col-sm colSt">
 						<div class="oneTop">
 							<div class="oneTopLft">
-								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock emoji"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
 								<div class="inBlock oneTopTtl">
 									Feeling bored
 								</div>
@@ -263,7 +277,7 @@
 					<div class="col-sm colSt last">
 						<div class="oneTop">
 							<div class="oneTopLft">
-								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock emoji"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
 								<div class="inBlock oneTopTtl">
 									Feeling frustrated
 								</div>
