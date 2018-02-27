@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"><!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+	<script src="test.js">
+	</script>
+	<script>
+			$('#myModal').on('shown.bs.modal', function () {
+			  $('#myInput').trigger('focus')
+				 })
+	</script>
+	<style>
+		#cont{
+			max-width: 100%;
+			margin: auto;
+			}
+		header, footer{
+			width: 100%;
+			background: #fff;
+			}
+		header{
+			padding: 0.2em;
+			}
+		.oneTopLft{
+			width: 69%;
+			padding: 0;
+			display: inline-block;
+			font-size: 1.2em;
+			font-weight: bold;
+			}
+		.oneTopRgt{
+			width: 30%;
+			display: inline-block;
+			text-align: right;
+			}
+		.oneTopMain{
+			width:100%;
+			border-top: 1px solid #ccc;
+			}
+		.oneTopMain p{
+			padding-top: 1.2em;
+			padding-bottom: 1.2em;
+			font-family: 'Nunito', sans-serif;
+			line-height: 200%;
+			font-weight: bold;
+			font-size: 1.1em;
+			color: #555;
+			}
+		.inBlock{display: inline-block}
+		.oneTopDate{
+			color: #1d99d5; 
+			text-transform: uppercase;
+			}
+		.oneTopTtl{
+			width: 65%;
+			padding-left: 0.75em;
+			display: inline-block;
+			}
+		.oneTopMain img {
+			margin-top: 1em;
+			width: 100%;
+			z-index: 1;
+			}
+		.oneTopMain a{
+			width: 100%;
+			height: 100%;
+			display: block;
+			z-index: 10
+			}
+		header img{
+			margin: auto;
+			padding: 0.8em;
+			width:130px;
+			display: block;
+			}
+		p.oneTopDate {
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			line-height: 100%;
+			display: inline-block;
+			}
+		.oneTop{
+			padding: 1em 0;
+			vertical-align: middle;
+			}
+		.image {
+			opacity: 1;
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: .5s ease;
+			backface-visibility: hidden;
+			}
+		.topBtn {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 46%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+			}
+		.imgTop:hover {
+			background: rgba(0,0,0,1)
+			}
+		.imgTop:hover .image {
+			opacity: 0.6;
+			background: #000
+			}
+		.imgTop:hover .topBtn {
+			opacity: 1;
+			}
+		.text button{
+			display: block;
+			background-color: #2098d5;
+			color: white;
+			font-size: 16px;
+			padding: 0;
+			width: 4em;
+			height: 4em;
+			border-radius: 100%;
+			font-weight: bold;
+			line-height: 4em;
+			vertical-align: middle;
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+			font-size:1.1em;
+			border: none
+			}
+		footer p{
+			padding: 2em 0 3em 0;
+			text-align: center;
+			color: #1d99d5;
+			}
+		.oneTop div img{
+			width: 100%;
+			}
+		  @media (min-width: 576px)
+			{
+			main{
+				/*max-width: 1366px;*/
+				margin: 0 auto 2em;
+				padding: 3em 0;
+				background-color:#e4e4e4;
+				}
+			.colSt{
+				margin: 1em 2em 1em 0em;
+				background: #fff;
+				display: inline-block;
+				}
+			.last{
+				margin-right: 0;
+				}
+
+			}
+
+	</style>
+	
+	<title>Hello, world!</title>
+</head>
+	
+<body>
+	<div id="cont">
+		<header>
+			<img class="svgLogo" src="https://rawgit.com/artedigitalmedia/uidev_test/master/assets/mps-logo.svg">
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm colSt">
+						<div class="oneTop">
+							<div class="oneTopLft">
+								<div class="inBlock emoji"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock oneTopTtl">
+									Feeling positive
+								</div>
+							</div><!-- 
+									 -->
+							<div class="oneTopRgt">
+								<p class="oneTopDate">Sun 17 Sept<br>
+								10:34am</p>
+							</div>
+						</div>
+						<div class="oneTopMain">
+							<div class="imgTop">
+								<a href="#"><img alt="Avatar" class="image" src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/jane.jpg"></a>
+								<div class="topBtn">
+									<div class="text">
+										<button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">&gt;</button>
+									</div>
+								</div>
+							</div>
+							<div class="txtBtm">
+								<p>Went for an amazing walk along the seaside. The sunset was incredible. Very inspiring. What an astounding world we live in. Took this photo ju&hellip;</p>
+							</div>
+						</div>
+					</div><!-- END ONE -->
+					<div class="col-sm colSt last">
+						<div class="oneTop">
+							<div class="oneTopLft">
+								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock oneTopTtl">
+									Feeling joyful
+								</div>
+							</div><!-- 
+									 -->
+							<div class="oneTopRgt">
+								<p class="oneTopDate">Sun 17 Sept<br>
+								10:34am</p>
+							</div>
+						</div>
+						<div class="oneTopMain">
+							<div class="imgTop">
+								<a href="#"><img alt="Avatar" class="image" src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/charlie.jpg"></a>
+								<div class="topBtn">
+									<div class="text">
+										<button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">&gt;</button>
+									</div>
+								</div>
+							</div>
+							<div class="txtBtm">
+								<p>Went for an amazing walk along the seaside. The sunset was incredible. Very inspiring. What an astounding world we live in. Took this photo ju&hellip;</p>
+							</div>
+						</div>
+					</div><!-- END TWO -->
+				</div><!-- end ROW -->
+				<div class="row">
+					<div class="col-sm colSt">
+						<div class="oneTop">
+							<div class="oneTopLft">
+								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock oneTopTtl">
+									Feeling bored
+								</div>
+							</div><!-- 
+									 -->
+							<div class="oneTopRgt">
+								<p class="oneTopDate">Sun 17 Sept<br>
+								10:34am</p>
+							</div>
+						</div>
+						<div class="oneTopMain">
+							<div class="imgTop">
+								<a href="#"><img alt="Avatar" class="image" src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/katie.jpg"></a>
+								<div class="topBtn">
+									<div class="text">
+										<button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">&gt;</button>
+									</div>
+								</div>
+							</div>
+							<div class="txtBtm">
+								<p>Went for an amazing walk along the seaside. The sunset was incredible. Very inspiring. What an astounding world we live in. Took this photo ju&hellip;</p>
+							</div>
+						</div>
+					</div><!-- END THREE -->
+					<div class="col-sm colSt last">
+						<div class="oneTop">
+							<div class="oneTopLft">
+								<div class="inBlock"><img src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/emoji.jpg"></div>
+								<div class="inBlock oneTopTtl">
+									Feeling frustrated
+								</div>
+							</div><!-- 
+									 -->
+							<div class="oneTopRgt">
+								<p class="oneTopDate">Sun 17 Sept<br>
+								10:34am</p>
+							</div>
+						</div>
+						<div class="oneTopMain">
+							<div class="imgTop">
+								<a href="#"><img alt="Avatar" class="image" src="https://raw.githubusercontent.com/artedigitalmedia/uidev_test/master/assets/vanessa.jpg"></a>
+								<div class="topBtn">
+									<div class="text">
+										<button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">&gt;</button>
+									</div>
+								</div>
+							</div>
+							<div class="txtBtm">
+								<p>Went for an amazing walk along the seaside. The sunset was incredible. Very inspiring. What an astounding world we live in. Took this photo ju&hellip;</p>
+							</div>
+						</div>
+					</div><!-- END FOUR -->
+				</div><!-- end ROW -->
+			</div>
+		</main>
+		<footer>
+			<p>&copy; My Possible Self 2017. All Rights Reserved</p>
+		</footer>
+	</div><!-- Modal -->
+	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
